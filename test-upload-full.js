@@ -10,7 +10,6 @@ async function runFullUploadTest() {
     try {
         console.log('--- Testing Full Image Upload Flow ---');
 
-        // Ensure dummy image exists
         if (!fs.existsSync(TEST_IMAGE_PATH)) {
             fs.writeFileSync(TEST_IMAGE_PATH, 'dummy image content');
         }
