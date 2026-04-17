@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.static('src/uploads')); // Serve uploads
 app.use(cors({
-    origin: 'http://localhost:5173', // Frontend URL (adjust if needed)
+    origin: true, // Frontend URL dynamically allowed
     credentials: true
 }));
 
