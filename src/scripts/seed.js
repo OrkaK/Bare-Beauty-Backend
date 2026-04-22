@@ -158,6 +158,56 @@ const productsData = [
         howToUse: { steps: ['Wet sponge, squeeze out excess water, bounce on face.'] },
         skinType: ['All'],
         rating: { average: 4.9, count: 540 }
+    },
+    {
+        name: 'Clarifying Witch Hazel Toner',
+        price: 18.00,
+        description: 'Deep-cleaning toner designed to control oily and acne-prone skin.',
+        images: ['https://placehold.co/400x400?text=Witch+Hazel+Toner'],
+        category: 'Skincare',
+        ingredients: ['Witch Hazel', 'Salicylic Acid'],
+        benefits: ['Oil Control', 'Reduces Acne'],
+        howToUse: { steps: ['Apply gently using a cotton round.'] },
+        skinType: ['Oily', 'Combination'],
+        rating: { average: 4.5, count: 310 }
+    },
+    {
+        name: 'Soothing Aloe Toner',
+        price: 24.00,
+        description: 'Ultra-gentle toner to soothe inflammation and hydrate sensitive skin.',
+        images: ['https://placehold.co/400x400?text=Aloe+Toner'],
+        category: 'Skincare',
+        ingredients: ['Aloe Vera', 'Centella'],
+        benefits: ['Calming', 'Reduces Redness'],
+        howToUse: { steps: ['Pat into the skin with hands.'] },
+        skinType: ['Sensitive', 'Dry'],
+        rating: { average: 4.7, count: 420 },
+        isPopular: true
+    },
+    {
+        name: 'Silky Matte Lipstick (Crimson)',
+        price: 26.00,
+        description: 'A deep crimson red that commands attention without drying out lips.',
+        images: ['https://placehold.co/400x400?text=Matte+Lipstick'],
+        category: 'Makeup',
+        ingredients: ['Shea Butter', 'Matte Pigments'],
+        benefits: ['Matte Finish', 'Highly Pigmented'],
+        howToUse: { steps: ['Swipe once for full coverage.'] },
+        skinType: ['All'],
+        rating: { average: 4.3, count: 180 }
+    },
+    {
+        name: 'Intensive Night Repair Serum',
+        price: 65.00,
+        description: 'Overnight miracle worker that aggressively repairs damaged skin barriers.',
+        images: ['https://placehold.co/400x400?text=Night+Serum'],
+        category: 'Skincare',
+        ingredients: ['Peptides', 'Ceramides', 'Retinol'],
+        benefits: ['Anti-aging', 'Barrier Repair'],
+        howToUse: { steps: ['Apply a pea-sized amount at bedtime.'] },
+        skinType: ['Mature', 'Dry', 'Normal'],
+        rating: { average: 4.9, count: 890 },
+        isPopular: true
     }
 ];
 
