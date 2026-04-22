@@ -14,25 +14,21 @@ const productsData = [
     {
         name: 'Hydrating Lipstick',
         price: 24.00,
-        description: 'A creamy, moisturizing lipstick that lasts all day.',
-        images: ['https://placehold.co/400x400?text=Lipstick+1', 'https://placehold.co/400x400?text=Lipstick+2'],
+        description: 'A creamy, moisturizing lipstick that lasts all day without cracking.',
+        images: ['https://placehold.co/400x400?text=Lipstick+1'],
         category: 'Makeup',
         ingredients: ['Castor Oil', 'Beeswax', 'Vitamin E'],
         benefits: ['Hydrating', 'Long-lasting', 'Vibrant Color'],
         howToUse: { steps: ['Apply from center of lips outwards.'] },
         skinType: ['All'],
         rating: { average: 4.5, count: 120 },
-        isPopular: true,
-        variants: [
-            { name: 'Shade', value: 'Ruby Red', inStock: true },
-            { name: 'Shade', value: 'Nude', inStock: true }
-        ]
+        isPopular: true
     },
     {
         name: 'Glow Serum',
         price: 45.00,
-        description: 'Vitamin C serum for radiant skin.',
-        images: ['https://placehold.co/400x400?text=Serum+1'],
+        description: 'Powerful Vitamin C serum for bright, radiant skin.',
+        images: ['https://placehold.co/400x400?text=Glow+Serum'],
         category: 'Skincare',
         ingredients: ['Vitamin C', 'Hyaluronic Acid'],
         benefits: ['Brightening', 'Anti-aging'],
@@ -44,7 +40,7 @@ const productsData = [
     {
         name: 'Jade Roller',
         price: 18.00,
-        description: 'Facial massage tool for debuffing.',
+        description: 'Soothing facial massage tool for debuffing and lymphatic drainage.',
         images: ['https://placehold.co/400x400?text=Jade+Roller'],
         category: 'Tools',
         ingredients: ['Jade Stone'],
@@ -56,19 +52,112 @@ const productsData = [
     {
         name: 'Matte Foundation',
         price: 32.00,
-        description: 'Full coverage matte foundation.',
+        description: 'Full coverage matte foundation for a flawless finish.',
         images: ['https://placehold.co/400x400?text=Foundation'],
         category: 'Makeup',
         ingredients: ['Water', 'Silicone'],
         benefits: ['Full Coverage', 'Matte Finish'],
         howToUse: { steps: ['Blend with sponge or brush.'] },
         skinType: ['Oily', 'Combination'],
-        rating: { average: 4.0, count: 200 },
-        variants: [
-            { name: 'Shade', value: 'Ivory' },
-            { name: 'Shade', value: 'Beige' },
-            { name: 'Shade', value: 'Mocha' }
-        ]
+        rating: { average: 4.0, count: 200 }
+    },
+    {
+        name: 'Balancing Rose Toner',
+        price: 28.00,
+        description: 'Alcohol-free toner that restores skin pH and hydrates naturally.',
+        images: ['https://placehold.co/400x400?text=Rose+Toner'],
+        category: 'Skincare',
+        ingredients: ['Rose Water', 'Glycerin', 'Aloe Vera'],
+        benefits: ['Tightens Pores', 'Restores Balance'],
+        howToUse: { steps: ['Apply to a cotton pad and wipe across face.'] },
+        skinType: ['All', 'Sensitive'],
+        rating: { average: 4.9, count: 320 },
+        isPopular: true
+    },
+    {
+        name: 'Heat Protectant Spray',
+        price: 22.00,
+        description: 'Shields hair from thermal styling up to 450 degrees.',
+        images: ['https://placehold.co/400x400?text=Heat+Spray'],
+        category: 'Hair',
+        ingredients: ['Argan Oil', 'Keratin'],
+        benefits: ['Thermal Protection', 'Reduces Frizz'],
+        howToUse: { steps: ['Spritz evenly on damp hair before blow-drying.'] },
+        skinType: ['All'],
+        rating: { average: 4.6, count: 95 }
+    },
+    {
+        name: 'Nourishing Cuticle Oil',
+        price: 15.00,
+        description: 'Strengthens nails and softens cuticles instantly.',
+        images: ['https://placehold.co/400x400?text=Cuticle+Oil'],
+        category: 'Nails',
+        ingredients: ['Jojoba Oil', 'Vitamin E'],
+        benefits: ['Promotes Nail Growth', 'Hydrating'],
+        howToUse: { steps: ['Massage into cuticles nightly.'] },
+        skinType: ['All'],
+        rating: { average: 4.7, count: 150 }
+    },
+    {
+        name: 'Plumping Lip Gloss',
+        price: 19.50,
+        description: 'High-shine gloss that creates naturally fuller-looking lips.',
+        images: ['https://placehold.co/400x400?text=Lip+Gloss'],
+        category: 'Makeup',
+        ingredients: ['Peppermint Oil', 'Shea Butter'],
+        benefits: ['Plumping', 'High Shine', 'Non-sticky'],
+        howToUse: { steps: ['Apply over lips or lipstick.'] },
+        skinType: ['All'],
+        rating: { average: 4.4, count: 210 }
+    },
+    {
+        name: 'Revitalizing Eye Cream',
+        price: 42.00,
+        description: 'Fights dark circles and puffiness under the eyes.',
+        images: ['https://placehold.co/400x400?text=Eye+Cream'],
+        category: 'Skincare',
+        ingredients: ['Caffeine', 'Peptides'],
+        benefits: ['Reduces Dark Circles', 'Firms Skin'],
+        howToUse: { steps: ['Tap gently under eyes morning and night.'] },
+        skinType: ['Dry', 'Normal', 'Mature'],
+        rating: { average: 4.8, count: 430 }
+    },
+    {
+        name: 'Volumizing Shampoo',
+        price: 26.00,
+        description: 'Lifts hair at the root for incredible bounce and volume.',
+        images: ['https://placehold.co/400x400?text=Volume+Shampoo'],
+        category: 'Hair',
+        ingredients: ['Biotin', 'Rice Protein'],
+        benefits: ['Adds Volume', 'Strengthens Hair'],
+        howToUse: { steps: ['Massage into wet scalp and rinse.'] },
+        skinType: ['All'],
+        rating: { average: 4.1, count: 180 }
+    },
+    {
+        name: 'SPF 30 Day Cream',
+        price: 45.00,
+        description: 'Daily moisturizer with broad spectrum sun protection.',
+        images: ['https://placehold.co/400x400?text=SPF+Cream'],
+        category: 'Skincare',
+        ingredients: ['Zinc Oxide', 'Niacinamide'],
+        benefits: ['Sun Protection', 'Hydrating'],
+        howToUse: { steps: ['Apply generously 15 minutes before sun exposure.'] },
+        skinType: ['Combination', 'Dry'],
+        rating: { average: 4.6, count: 275 },
+        isPopular: true
+    },
+    {
+        name: 'Pro Blending Sponge',
+        price: 12.00,
+        description: 'Ultra-soft sponge for streak-free makeup application.',
+        images: ['https://placehold.co/400x400?text=Sponge'],
+        category: 'Tools',
+        ingredients: ['Latex-free Foam'],
+        benefits: ['Flawless Finish', 'Bouncy Texture'],
+        howToUse: { steps: ['Wet sponge, squeeze out excess water, bounce on face.'] },
+        skinType: ['All'],
+        rating: { average: 4.9, count: 540 }
     }
 ];
 

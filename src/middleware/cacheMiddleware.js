@@ -3,6 +3,7 @@ const redis = require('redis');
 // Create Redis Client (Wait to connect until invoked)
 let redisClient;
 
+/*
 (async () => {
     redisClient = redis.createClient({
         url: process.env.REDIS_URL || 'redis://localhost:6379'
@@ -17,6 +18,7 @@ let redisClient;
         console.error('Failed to immediately connect to Redis. Safe fallback activated. Operating fully with MongoDB.');
     }
 })();
+*/
 
 const checkCache = async (req, res, next) => {
     // 1. Safety Feature: Route instantly if disconnected (e.g. no local dev container)
